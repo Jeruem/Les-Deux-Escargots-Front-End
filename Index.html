@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Les Deux Escargots</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css"> 
+</head>
+<body>
+    <!-- En-tête avec un menu de navigation -->
+    <header>
+        <nav class="bg-brown">
+            <h1>Les Deux Escargots</h1>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Présentation -->
+    <section id="about">
+        <h1>Bienvenue aux Deux Escargots</h1>
+        <p>Découvrez notre ambiance unique et notre menu exceptionnel.</p>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <p>Explorez nos plats raffinés et nos sélections de boissons.</p>
+    </section>
+
+    <!-- Section Réservation -->
+    <section id="reservation">
+        <h2>Réservez une Table</h2>
+        <p>Réservez votre table en ligne dès maintenant.</p>
+        <form action="reservation.php" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre e-mail" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Les Deux Escargots. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
